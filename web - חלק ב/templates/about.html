@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות - BookMyCut</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bookmycut.css') }}">
+</head>
+<body>
+{% include 'navigation.html' %}
+    <main class="about-page">
+        <section class="about-header">
+            <h1>BookMyCut</h1>
+            <p>המקום המושלם לקבוע תור למספרות בקלות, במהירות ובנוחות.</p>
+        </section>
+
+        <section class="about-content">
+            <h2>מי אנחנו?</h2>
+            <p>
+                BookMyCut נולד מתוך הצורך להפוך את התהליך של קביעת תור למספרה לנוח, פשוט ונגיש.
+                אנו מבינים שלחיים העמוסים שלך אין מקום להתפשרות, ולכן פיתחנו פלטפורמה שמאפשרת לך למצוא את המספרות הטובות ביותר,
+                לבחור את השירות שמתאים לך, ולהזמין תור תוך שניות.
+            </p>
+
+            <h2>החזון שלנו</h2>
+            <p>
+                אנחנו שואפים לשנות את הדרך שבה אנשים מזמינים תורים למספרות ברחבי הארץ.
+                המטרה שלנו היא ליצור חיבור פשוט בין לקוחות למספרות, תוך מתן כלים מתקדמים לניהול זמנים, שירותים ומבצעים.
+            </p>
+
+            <h2>איך זה עובד?</h2>
+            <p>
+                כל שעליך לעשות הוא לבחור את המספרה המתאימה, להגדיר את השירות הרצוי ולהזמין תור בלחיצת כפתור. אנו מבטיחים חוויית משתמש חלקה ומקצועית.
+            </p>
+        </section>
+
+        <section class="about-image">
+                <img src="{{url_for('static', filename="images/about.jpg" ) }}" alt="">
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
