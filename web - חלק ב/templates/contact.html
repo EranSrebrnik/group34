@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bookmycut.css') }}">
+</head>
+<body>
+{% include 'navigation.html' %}
+
+    <main>
+        <section class="contact-form">
+            <h1> צור קשר </h1>
+            <h2>נשמח לשמוע ממך!</h2>
+            <form id="contactForm" action="#" method="POST" novalidate>
+                <label for="name">שם מלא:</label>
+                <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+
+                <label for="email">כתובת מייל:</label>
+                <input type="email" id="email" name="email" placeholder="הכנס את כתובת המייל שלך" required>
+
+                <label for="phone">מספר טלפון:</label>
+                <input type="tel" id="phone" name="phone" pattern="05[0-9]{8}" placeholder="הכנס את מספר הטלפון" required>
+                <label for="message">הודעה:</label>
+                <textarea id="message" name="message" rows="5" placeholder="כתוב את הודעתך כאן" required></textarea>
+
+                <button type="submit">שלח</button>
+            </form>
+        </section>
+    </main>
+<script src="{{ url_for('static', filename='contact.js') }}" defer></script>
+{% include 'footer.html' %}
+
+</body>
+</html>
