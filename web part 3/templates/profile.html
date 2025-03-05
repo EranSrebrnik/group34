@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyCut - פרופיל משתמש</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bookmycut.css') }}">
+<body>
+{% include 'navigation.html' %}
+    <main class="profile">
+        <section class="user-info">
+            <div class="profile-header">
+
+                <h2></h2>
+                <p></p>
+            </div>
+
+            <div class="user-details">
+                <label>שם מלא</label>
+                <div>{{ user.full_name }}</div>
+
+                <label>מין</label>
+                <div>{{ user.gender }}</div>
+
+                <label>כתובת</label>
+                <div>{{ user.address }}</div>
+
+                <label>תאריך לידה</label>
+                <div>{{ user.birthdate }}</div>
+
+                <label>מספר טלפון</label>
+                <div>{{ user.phone }}</div>
+            </div>
+        </section>
+    </main>
+</body>
+{% include 'footer.html' %}
+
+</html>

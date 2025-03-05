@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyCut - Salons</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bookmycut.css') }}">
+</head>
+<body>
+</head>
+{% include 'navigation.html' %}
+    <main>
+        <section class="salons">
+            <div class="salon-section">
+                <h2>מספרות בחיפה</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon1.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>מראה חדש</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                         </a>
+                    </div>
+                    <div class="salon-card">
+                          <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon2.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>אומנות היופי</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                          </a>
+                    </div>
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon3.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                         </a>
+                    </div>
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon4.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="salon-section">
+                <h2>מספרות בתל אביב</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon5.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>זוהר המספרה</h3>
+                            <p>רחוב אילון 7</p>
+                        </div>
+                         </a>
+                    </div>
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon6.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>אומנות השיער</h3>
+                            <p>רחוב דיזנגוף 30</p>
+                        </div>
+                         </a>
+                    </div>
+                    <div class="salon-card">
+                         <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon7.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המראה החדש</h3>
+                            <p>רחוב העצמאות 10</p>
+                        </div>
+                         </a>
+                    </div>
+                      <div class="salon-card">
+                           <a href="/salonprofile">
+                        <img src="{{url_for('static', filename="images/salon8.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                           </a>
+                    </div>
+                </div>
+            </div>
+             <div class="salon-section">
+                <h2>מספרות באילת</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon9.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>תלתלים קסומים</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon10.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>מספרת עליזה</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon11.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>עיצוב שיער נועהת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon1.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטודיו לשיער יפית</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות בבאר שבע</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon2.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>שיער ושיק</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon3.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>ביוטי סנטר</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon4.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>קלאסיק ביוטי</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon5.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>שיער מושלם</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות בקריות</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon6.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3> מספרת החלום</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon7.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>קסם השיער</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon8.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon9.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>עדי עיצוב שיער</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות במודיעין</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon10.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של יובל</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon11.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספריים של יעל</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon1.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon2.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות בירושלים</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon3.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>אלגנט ביוטי</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon4.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>ביוטי פלוס </h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon5.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon6.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות בקרית שמונה</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon7.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>יופי טבעי</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon8.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>מראה יוקרתי</h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon9.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon10.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="salon-section">
+                <h2>מספרות ברחובות</h2>
+                <a href="#" class="see-all">See All</a>
+                <div class="salon-grid">
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon11.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>הרכות שבשיער</h3>
+                            <p>רחוב הנשיאים 8</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon1.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של סיון </h3>
+                            <p>דרך השלום 12</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon2.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>המספרה של ליאת</h3>
+                            <p>שדרות בן גוריון 22</p>
+                        </div>
+                    </div>
+                    <div class="salon-card">
+                        <img src="{{url_for('static', filename="images/salon3.jpg")}}" alt="Salon Image">
+                        <div class="salon-info">
+                            <h3>סטייל שיק</h3>
+                            <p>רחוב הרצל 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+{% include 'footer.html' %}
+</html>

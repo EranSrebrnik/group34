@@ -1,0 +1,22 @@
+<header class="header">
+    <div class="logo">
+        <h1>BookMyCut</h1>
+        <p>Book from the comfort of your couch</p>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+             {% if user %}
+            <!-- אם המשתמש מחובר - הצג כפתור Logout -->
+            <li><a href="{{ url_for('logout') }}" class="logout-btn">Logout</a></li>
+        {% else %}
+            <!-- אם המשתמש לא מחובר - הצג כפתור Sign In -->
+            <li><a href="{{ url_for('signin') }}">Sign In</a></li>
+        {% endif %}
+            <li><a href="/signup">Sign up</a></li>
+            <li><a href="/salon">Salons</a></li>
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
